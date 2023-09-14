@@ -36,8 +36,8 @@ const ShowSingleCard = ({ show }) => {
       <div class="flex flex-col mb-10 lg:items-start items-center">
         
         <div class="flex-grow">
-          <h2 class="text-white text-lg title-font font-medium mb-3">The Catalyzer</h2>
-          <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+          <h2 class="text-white text-lg title-font font-medium mb-3">Genres</h2>
+          <p class="leading-relaxed text-base">{show.genres}</p>
           
         </div>
       </div>
@@ -61,7 +61,7 @@ const ShowSingleCard = ({ show }) => {
 
 
       
-      <ButtonBack id={index} />
+      <ButtonBack />
 
 
     </div>
