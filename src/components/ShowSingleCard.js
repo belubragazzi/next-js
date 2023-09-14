@@ -29,25 +29,31 @@ const ShowSingleCard = ({ show }) => {
         
         <div class="flex-grow">
           <h2 class="text-white text-left	text-lg title-font font-medium mb-3">Summary</h2>
-          <p class="leading-relaxed text-base">{show.summary}</p>
+          <p class="leading-relaxed text-base" dangerouslySetInnerHTML={{ __html: show.summary }}></p>
           
         </div>
       </div>
       <div class="flex flex-col mb-10 lg:items-start items-center">
         
         <div class="flex-grow">
-          <h2 class="text-white text-lg title-font font-medium mb-3">Genres</h2>
-          <p class="leading-relaxed text-base">{show.genres}</p>
+          <h2 class="text-white text-left text-lg title-font font-medium mb-3">Genres</h2>
+          <p class="leading-relaxed text-base">{show.genres ? show.genres?.join(', ') : "Ni idea bro"}</p>
           
         </div>
       </div>
       <div class="flex flex-col mb-10 lg:items-start items-center">
        
         <div class="flex-grow">
-          <h2 class="text-white text-lg title-font font-medium mb-3">Neptune</h2>
-          <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-
-          <ButtonBack />
+          <h2 class="text-white text-left text-lg title-font font-medium mb-3">Language</h2>
+          <p class="leading-relaxed text-base"> {show.language}</p>
+        </div>
+      </div>
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+       
+        <div class="flex-grow">
+          <h2 class="text-white text-left text-lg title-font font-medium mb-3">  <ButtonBack /></h2>
+          
+        
         </div>
       </div>
     </div>
