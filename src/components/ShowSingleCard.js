@@ -1,13 +1,12 @@
 import Image from 'next/image';
 import ButtonBack from './ButtonBack';
 import index from '@/pages/index';
+import Footer from '@/components/Footer';
+
 
 const ShowSingleCard = ({ show }) => {
   return (
-    <div>
-      
-      
-      
+    <div class="text-gray-400 bg-gray-900 body-font">
       <section class="text-gray-400 bg-gray-900 body-font">
 
 <div class="pt-10"> 
@@ -58,22 +57,14 @@ const ShowSingleCard = ({ show }) => {
       </div>
     </div>
   </div>
-</section>
-
-
-
-
-
-
-
-
-
-      
+</section>   
       
 
-
+<Footer />
     </div>
+
   );
+
 };
 
 export default ShowSingleCard;

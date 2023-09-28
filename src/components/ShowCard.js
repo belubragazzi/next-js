@@ -12,6 +12,8 @@ const ShowCard = ({ actualShow }) => {
       <h3>{name}</h3>
       <ButtonLink id={id} />
     </div>
+    
+    
   );
 };
 
