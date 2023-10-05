@@ -2,12 +2,14 @@ import Image from 'next/image';
 import ButtonBack from './ButtonBack';
 import index from '@/pages/index';
 import Footer from '@/components/Footer';
+import Navbar from './Navbar';
 
 
 const ShowSingleCard = ({ show }) => {
   return (
-    <div class="text-gray-400 bg-gray-900 body-font">
-      <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="text-gray-400 body-font">
+      <Navbar />
+      <section class="text-gray-400body-font">
 
 <div class="pt-10"> 
       <h2>{show.name}</h2>
