@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
+import ButtonBack from '@/components/ButtonBack'
 function AboutContainer() {
   return (
     <div><section class="text-gray-400  body-font">
@@ -22,8 +22,7 @@ function AboutContainer() {
           Marvel de Marvel Studios. Johns también mantuvo su papel actual en DC Comics. Sin embargo, la formación de la división no fue diseñada para anular el mandato 
           dirigido por el director. </p>
         <div class="flex justify-center">
-          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-          <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
+          <ButtonBack />
         </div>
       </div>
     </div>

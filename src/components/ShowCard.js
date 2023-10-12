@@ -11,12 +11,12 @@ const ShowCard = ({ actualShow }) => {
      <Link  href={`/show/${id}`}>
     
       
-        <div class="flex relative" >
+        <div className="flex relative" >
           
           <Image className="absolute inset-0 w-full h-full object-cover object-center" src={image?.original} width={680} height={1000} alt={name} />
-          <div class="px-8 py-10 relative z-10  border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 h-64 w-64">
-            <h2 class="tracking-widest text-sm title-font font-large text-indigo-400 mb-1">{name}</h2>
-            <h1 class="title-font text-center text-lg font-medium text-white mb-3">Ver más</h1>          
+          <div className="px-8 py-20 relative z-10  border-2 border-white-100 bg-black opacity-0 hover:opacity-80 h-64 w-64">
+            <h2 className="tracking-widest text-sm title-font font-large text-white-400 mb-1">{name}</h2>
+            <h1 className="title-font text-center text-lg font-medium text-gray-400 mb-3">Ver más</h1>          
             </div>
         </div>
       
